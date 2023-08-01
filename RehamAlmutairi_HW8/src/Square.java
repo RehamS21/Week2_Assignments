@@ -20,11 +20,13 @@ public class Square extends Rectangle{
        super.setWidth(width);
     }
 
+
+
     public double getArea(){
-        return super.getLength() * getSide();
+        return getSide() * getSide();
     }
     public double getPerimeter(){
-        return getArea() * 2;
+        return 4 * getSide();
     }
 
     @Override
